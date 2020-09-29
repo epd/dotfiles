@@ -15,6 +15,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 Plugin 'mhinz/vim-mix-format'
 Plugin 'neoclide/coc.nvim'
 Plugin 'janko/vim-test'

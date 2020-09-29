@@ -26,6 +26,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'prettier/vim-prettier'
 Plugin 'fatih/vim-go'
 Plugin 'dense-analysis/ale'
+Plugin 'hashivim/vim-terraform'
 
 call vundle#end()
 filetype plugin indent on
@@ -223,3 +224,5 @@ autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeIm
 set foldmethod=indent
 set foldlevel=1
 set foldclose=all
+
+let g:terraform_fmt_on_save=1

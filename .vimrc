@@ -228,3 +228,6 @@ set foldlevel=1
 set foldclose=all
 
 let g:terraform_fmt_on_save=1
+
+" visual block selection override
+nnoremap q <c-V>

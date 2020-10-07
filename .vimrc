@@ -27,11 +27,13 @@ Plugin 'prettier/vim-prettier'
 Plugin 'fatih/vim-go'
 Plugin 'dense-analysis/ale'
 Plugin 'hashivim/vim-terraform'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 filetype plugin indent on
 
 let g:mix_format_on_save = 1
+let g:indent_guides_enable_on_vim_startup = 1
 
 colorscheme horizon
 syntax enable

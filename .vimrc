@@ -28,6 +28,9 @@ Plugin 'fatih/vim-go'
 Plugin 'dense-analysis/ale'
 Plugin 'hashivim/vim-terraform'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tsandall/vim-rego'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'cocopon/iceberg.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -35,12 +38,11 @@ filetype plugin indent on
 let g:mix_format_on_save = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
-colorscheme horizon
+colorscheme iceberg
 syntax enable
 set path+=**
 set ttyfast
 
-" set autochdir
 set wildmenu
 set wildignore+=node_modules/*,_build/*,deps/*
 
@@ -231,3 +233,7 @@ let g:terraform_fmt_on_save=1
 
 " visual block selection override
 nnoremap q <c-V>
+
+" Autoformat
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
